@@ -67,3 +67,16 @@ export async function criarFuncionario(funcionario) {
     body: JSON.stringify(funcionario),
   });
 }
+// Função para deletar
+export const deletarFuncionario = async (id) => {
+  const token = localStorage.getItem('token');
+  const res = await fetch(`http://localhost:8080/funcionarios/${id}`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${token}`,
+    },
+  });
+  if (!res.ok) throw new Error('Erro ao deletar funcionário');
+  return true;
+};
