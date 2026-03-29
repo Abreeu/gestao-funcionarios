@@ -3,9 +3,12 @@
 -- Inserindo usuário admin
 -- Senha: admin123 (criptografada com BCrypt)
 INSERT INTO usuario (email, senha)
-VALUES ('admin@empresa.com', '$2a$10$N.ZuO5O8KJQ5qZqZqZqZqO5O8KJQ5qZqZqZqZqO5O8KJQ5qZqZqZq');
+VALUES (
+  'admin@empresa.com',
+  '$2a$10$G/0MakO3PszbCbh1GvwsUuS6pmwDCbXSfo2PDwG.JGApmfSsE.Jti'
+);
 
--- Inserindo funcionário de exemplo
+-- Funcionários
 INSERT INTO funcionario (nome, data_admissao, salario, status)
 VALUES ('João Silva', '2023-01-15', 3500.00, 'ATIVO');
 
