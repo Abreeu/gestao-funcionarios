@@ -11,6 +11,11 @@
  Aplicação Full Stack de **Gestão de Funcionários**, desenvolvida com Java Spring Boot no backend e React.js no frontend. Permite autenticação de usuários, listagem e cadastro de funcionários, com todo o ambiente orquestrado via Docker Compose.
 
 ---
+## Demonstração da Interface de Login
+![Tela-Inicial](./frontend/src/assets/InterfaceLogin.png)
+
+## Demonstração da Interface de Dashboard
+![Tela-Inicial](./frontend/src/assets/InterfaceDash.png)
 
 ## Tecnologias Utilizadas <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hammer.png" width="25" height="25" />
 
@@ -76,6 +81,8 @@ docker-compose up --build
 ## Credenciais de Acesso
 
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Locked%20with%20Key.png" width="25" height="25" /> As credenciais abaixo são inseridas automaticamente via **Flyway (Migration V2 - Seed)** na primeira execução:
+
+(OBS: SE HOUVER CONGELAMENTO APOS O LOGIN, APERTE F5)
 
 | Campo | Valor               |
 |-------|---------------------|
