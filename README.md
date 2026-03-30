@@ -45,7 +45,7 @@
 ## Pré-requisitos <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Clipboard.png" width="25" height="25" />
  Para rodar este projeto, você precisa ter instalado **apenas**:
 
-- [Docker](https://www.docker.com/get-started)
+- [Docker](https://www.docker.com/get-started) <img src="https://skillicons.dev/icons?i=docker" width="25" height="25" style="margin-left: 8px;" />
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
 ---
@@ -78,9 +78,8 @@ docker-compose up --build
 
 ---
 
-## Credenciais de Acesso
-
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Locked%20with%20Key.png" width="25" height="25" /> As credenciais abaixo são inseridas automaticamente via **Flyway (Migration V2 - Seed)** na primeira execução:
+## Credenciais de Acesso <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Locked%20with%20Key.png" width="25" height="25" />
+ As credenciais abaixo são inseridas automaticamente via **Flyway (Migration V2 - Seed)** na primeira execução:
 
 (OBS: SE HOUVER CONGELAMENTO APOS O LOGIN, APERTE F5)
 
@@ -93,19 +92,21 @@ docker-compose up --build
 
 ---
 
-## Estrutura do Projeto
-
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/File%20Folder.png" width="25" height="25" />
+## Estrutura do Projeto <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/File%20Folder.png" width="25" height="25" />
 
 ```
 📦 projeto-raiz/
 ├── 📁 backend/
 │   ├── src/
-│   │   ├── main/java/...
+│   │   ├── main/java/com.desafio.gestao_funcionarios/
 │   │   │   ├── controller/
-│   │   │   ├── service/
+│   │   │   ├── dto/
+│   │   │   ├── model/
 │   │   │   ├── repository/
-│   │   │   └── entity/
+│   │   │   ├── security/
+│   │   │   ├── service/
+│   │   │   ├── util/
+│   │   │   └── GestaoFuncionariosApplication.java
 │   │   └── resources/
 │   │       └── db/migration/
 │   │           ├── V1__create_tables.sql
@@ -113,15 +114,24 @@ docker-compose up --build
 │   └── Dockerfile
 ├── 📁 frontend/
 │   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── public/
+│   ├── index.html
+│   ├── vite.config.js
+│   ├── package.json
 │   └── Dockerfile
 └── docker-compose.yml
 ```
 
 ---
 
-## Funcionalidades
-
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Bullseye.png" width="25" height="25" />
+## Funcionalidades <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Bullseye.png" width="25" height="25" />
 
 - ✅ Autenticação com e-mail e senha (senha criptografada com BCrypt)
 - ✅ Listagem de funcionários
