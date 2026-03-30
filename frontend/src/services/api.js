@@ -67,7 +67,7 @@ export async function criarFuncionario(funcionario) {
     body: JSON.stringify(funcionario),
   });
 }
-// Função para deletar
+// Função para deletar, vou deixar na espera 
 export const deletarFuncionario = async (id) => {
   const token = localStorage.getItem('token');
   const res = await fetch(`http://localhost:8080/funcionarios/${id}`, {

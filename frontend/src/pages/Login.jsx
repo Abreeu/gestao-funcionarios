@@ -16,7 +16,7 @@ const Login = () => {
     if (token) {
       navigate("/dashboard", { replace: true });
     }
-  }, [navigate]);
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
